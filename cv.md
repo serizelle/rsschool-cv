@@ -1,11 +1,11 @@
 # Elena Iiudina
-![my-photo](../rsschool-cv/my-photo.jpg)
+![my-photo](../rsschool-cv/my-photo.JPG)
 
 > I'm an enthusiastic and detail-oriented Junior Frontend Developer seeking an entry-level position. I have a demonstrated ability in coding, troubleshooting complex problems, and contributing to the timely completion of projects.
 
 _Nizhny Novgorod, Russia_\
 Email: _sailorelena@gmail.com_\
-Telegram: _https://t.me/ElenaSerize_\
+Telegram: https://t.me/ElenaSerize\
 Discord: _serize_
 
 ## Job experience
