@@ -1,2 +1,3 @@
-https://serizelle.github.io/rsschool-cv/cv
-https://serizelle.github.io/rsschool-cv/
+[Markdown CV](https://serizelle.github.io/rsschool-cv/cv)
+
+[My CV](https://serizelle.github.io/rsschool-cv/)
