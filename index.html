@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Elena</title>
+    <link rel="icon" type="image/x-icon" href="img/cherry.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="menu__item">
+                    <a href="#contacts" class="menu__link">Contacts</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#work" class="menu__link">Work experience</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#education" class="menu__link">Education</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#skills" class="menu__link">Skills</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="section_center">
+        <div class="column_side">
+            <img class="my_photo" src="img/my-photo.png" alt="my photo">
+            <section class="section__contacts" id="contacts">
+                    <h2 class="contacts__title">Contacts</h2>
+                    <p>Nizhny Novgorod, Russia</p>
+                    <a href = "mailto:sailorelena@gmail.com">sailorelena@gmail.com</a>
+                    <a href="https://t.me/ElenaSerize">Elena</a>
+                    <a href="https://discordapp.com/users/497074489033752577">serize</a>
+            </section>
+            <section class="section__skills" id="skills">
+                <h2 class="skills__title title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">Proficient in HTML and CSS</li>
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">Experience with Vue.js framework</li>
+                    <li class="skills__item">Basic knowledge of C, Python, Flask, SQlite</li>
+                    <li class="skills__item">Git and Github</li>
+                    <li class="skills__item">SASS</li>
+                    <li class="skills__item">Methodology BEM</li>
+                    <li class="skills__item">Figma, Photoshop, InDesign</li>
+                    <li class="skills__item">Bootstrap</li>
+                </ul>
+                <h2 class="skills__languages-title title">Languages</h2>
+                <ul class="skills__languages-list">
+                    <li class="language">Russian (native)</li>
+                    <li class="language">English (advanced)</li>
+                    <li class="language">Norwegian (beginner)`</li>
+                </ul>
+            </section>
+        </div>
+        <div class="column_main">
+            <section class="section__intro">
+                <h1 class="title section__intro__title">Elena <span class="span__surname">Jøssang</span></h1>
+                <p class="text section__intro__text">
+                    I’m an enthusiastic and detail-oriented Junior Frontend Developer seeking an entry-level position. I have a demonstrated ability in coding, troubleshooting complex problems, and contributing to the timely completion of projects.
+                </p>
+            </section>
+            <section class="section__education" id="education">
+                <h2 class="title section__education__title">Education</h2>
+                <p class="education__item"><strong>2008 - 2013</strong> - Master’s degree in English education, Nizhny Novgorod State Pedagogical University</p>
+                <p class="education__item"><strong>2022 - 2023</strong> - Certifications:</p>
+                <ul class="education__list">
+                    <li class="education__course-item">Frontend beginner developer, Innopolis University</li>
+                    <li class="education__course-item">UI design, Tomsk State University</li>
+                    <li class="education__course-item">CS50’s Introduction to Computer Science, Harvard University</li>
+                </ul>
+            </section>
+            <section class="section_work section_center" id="work">
+                <h2 class="section__work__title title">Work experience</h2>
+                <ul class="work__list">
+                    <li class="work__list__item"><strong>2013 - 2019</strong> - English school teacher</li>
+                    <li class="work__list__item"><strong>2019 - 2020</strong> - Private english tutor</li>
+                    <li class="work__list__item"><strong>2020 - 2022</strong> - Lead Specialist of Sberbank of Russia (Division of Request Processing)</li>
+                </ul>
+                <h3 class="projects__title">Course projects</h3>
+                <ul class="projects__list">
+                    <li class="projects__list__item"><a href="https://github.com/serizelle/agency">Final Frontend Developer course project - Agency Website</a></li>
+                    <li class="projects__list__item"><a href="https://github.com/serizelle/CS50-final-project">Final CS50 course project - The Sims 2 Aspiration Calculator</a></li>
+                    <li class="projects__list__item"><a href="https://github.com/serizelle/SMARTLIFEBIO">Health/diet service landing page</a></li>
+                </ul>
+            </section>
+            <section class="section__code-example">
+                <h2 class="title">Codewars</h2>
+                <pre class="code"><code>function multiply(a, b) {
+    return a * b;
+    }</code>
+                </pre>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/serizelle"><img src="img/github.svg" alt="github logo" class="footer__logo_github"></a>
+        <p class="footer__year"></p>
+        <a href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="rs school logo" class="footer__logo_rs-school"></a>
+    </footer>
+
+    <script>
+        const footerYearEl = document.querySelector('.footer__year');
+        let today = new Date();
+        let year = today.getFullYear();
+        footerYearEl.textContent = year;
+    </script>
+
+</body>
+</html>
