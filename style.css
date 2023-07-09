@@ -1,3 +1,305 @@
-.my_photo {
-    width: 50%;
+@font-face {
+    font-family: Sunless day;
+    src: url("fonts/sunless day.woff");
+}
+@font-face {
+    font-family: ChesterSans;
+    src: url("fonts/ChesterSans-Medium.ttf");
+}
+@font-face {
+    font-family: ChesterSans-Bold;
+    src: url("fonts/ChesterSans-Bold.ttf");
+}
+:root {
+    --pink: #EC4863;
+    --dark-pink: #A73E5C;
+    --dark-red: #5C2849;
+    --yellow: #FFDA66;
+    --blue: #1FCECB;
+}
+* {
+    margin: 0;
+    padding: 0;
+} 
+a {
+    text-decoration: none;
+    color: black;
+    transition: text-shadow 0.5s;
+}
+a:hover {
+    text-shadow: 1px 1px #EC4863;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: ChesterSans, serif;
+    font-size: 20px;
+    background: url(img/bg.jpg) center/cover no-repeat;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+main {
+    display: flex;
+    gap: 50px;
+}
+.column_main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column_side {
+    width: 40%;
+    margin-top: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.section_center {
+    padding-left: calc(50% - 1000px / 2);
+    padding-right: calc(50% - 1000px / 2);
+}
+
+.header {
+    backdrop-filter: saturate(180%) blur(10px);
+    width: 640px;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border: white 3px solid;
+    border-top: 0;
+}
+.nav__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.menu__link {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--dark-red);
+    padding: 24px 0px 24px 0px;
+    display: flex;
+    display: inline-block;
+    position: relative;
+    transition: text-shadow 1s;
+}
+.menu__link:hover {
+    text-shadow: 2px 2px #EC4863;
+}
+.menu__link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 22px;
+    left: 0;
+    background-color: var(--yellow);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.menu__link:hover::after {
+    background: var(--pink);
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.section__intro {
+    margin-top: 99px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+}
+.section__intro__title {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+.section__contacts {
+    padding-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.contacts__title::after {
+    content: url(img/blue_stroke.svg);
+    position: absolute;
+    top: 17px;
+    left: 32px;
+    width: 140px;
+    z-index: -1;
+}
+.skills__title {
+    position: relative;
+    padding-bottom: 15px;
+}
+.section__skills {
+    padding-left: 40px;
+}
+.skills__title::after {
+    content: url(img/yellow_stroke.svg);
+    position: absolute;
+    top: 0px;
+    left: -18px;
+    width: 154px;
+    z-index: -1;
+}
+.skills__list {
+    padding-left: 14px;
+    margin-bottom: 50px;
+}
+.skills__item {
+    padding-bottom: 10px;
+    text-indent: 8px;
+}
+.skills__item::marker  {
+        content: "🌠";
+}
+.skills__languages-list {
+    padding-left: 14px;
+}
+.language {
+    text-indent: 8px;
+    padding-bottom: 10px;
+}
+.language::marker  {
+    content: "🗣️";
+}
+.section__education__title {
+    position: relative;
+}
+.section__education__title::after {
+    content: url(img/dark_pink_stroke.svg);
+    position: absolute;
+    top: -1px;
+    left: -22px;
+    width: 167px;
+    z-index: -1;
+}
+.education__item {
+    padding-bottom: 10px;
+}
+.education__list {
+    padding-left: 130px;
+}
+.education__course-item {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.education__course-item::marker {
+    content: " 📜 ";
+    font-style: normal;
+}
+.section__work__title {
+    position: relative;
+}
+.section__work__title::after {
+    content: url(img/pink_stroke.svg);
+    position: absolute;
+    top: -10px;
+    left: -18px;
+    width: 230px;
+    z-index: -1;
+}
+.work__list__item {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.work__list__item:last-child {
+    padding-bottom: 15px;
+}
+.projects__title {
+    padding-bottom: 10px;
+}
+.projects__list {
+    padding-left: 24px;
+}
+.projects__list__item {
+    padding-bottom: 10px;
+
+}
+.projects__list__item::marker {
+    content: "📕";
+    font-style: normal;
+}
+.code {
+    background-color: var(--dark-pink);
+    padding: 10px;
+    max-width: 290px;
+}
+
+.title {
+    padding-bottom: 10px;
+}
+.span__surname {
+    font-family: Sunless day;
+    letter-spacing: 5px;
+    font-size: 70px;
+    color: #EC4863;
+    text-shadow: 2px 2px #5C2849;
+    position: relative;
+    top: -5px;
+}
+
+.footer {
+    width: 640px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border: white 3px solid;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .footer__logo_github {
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.5s linear;
+    transition: border-radius 0.1s linear;
+  }
+  .footer__logo_github:hover {
+    background-color: var(--dark-pink);
+    border-radius: 50%;
+  }
+  .footer__logo_rs-school {
+    width: 70px;
+  }
+  .footer__year {
+    font-family: Sunless day;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+@media (max-width: 767px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .column_side, .column_main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 644px) {
+    main {
+        width: 644px;
+        margin: 0 auto;
+    }
 }
